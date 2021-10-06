@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "668a0d1f-c8c8-4ff8-8aed-0584c611c88c",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Read",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Single_Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/single_read.php?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"single_read.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Betty Johnson\",\n    \"email\": \"betty@gmail.com\",\n    \"age\": \"26\",\n    \"designation\":  \"Singer\",\n    \"created\":  \"2012-06-01 02:12:30\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Betty Johnson\",\n    \"email\": \"betty@gmail.com\",\n    \"age\": \"26\",\n    \"designation\":  \"Singer\",\n    \"created\":  \"2012-06-01 02:12:30\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Betty Johnson\",\n    \"email\": \"betty@gmail.com\",\n    \"age\": \"26\",\n    \"designation\":  \"Singer\",\n    \"created\":  \"2012-06-01 02:12:30\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
